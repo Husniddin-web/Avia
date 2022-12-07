@@ -1,0 +1,361 @@
+/* GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* GLOBAL CSS */
+/* HEADERS  */
+nav{
+    padding: 0 30px;
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__bar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    cursor: pointer;
+    position: relative;
+}
+.nav__bar-item{
+    position: relative;
+}
+.item-3{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+}
+svg{
+    color: crimson;
+}
+svg:active{
+    opacity: .4;
+}
+.money{
+    display: inline-block;
+    padding:   20px 10px;
+    transition: all .4s ease;
+    position: relative;
+}
+.money:hover{
+    background-color: silver;
+}
+.sum{
+    font-size: 20px;
+}
+.money:hover  .sum{
+    color: aliceblue;
+}
+.money:active{
+    opacity: .7;
+}
+.num{
+    display: flex;
+    flex-direction: column;
+    color: cadetblue;
+}
+/* HEADERS  */
+/* MAIN START */
+.info{
+    margin-top: 100px;
+}
+.option{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.option h1{
+    font-weight: bold;
+}
+.option-list{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.option-item{
+    transition: all .3s ease;
+}
+.option-item:hover{
+    color: #D23369;
+}
+.active{
+    color: #D23369;
+}
+.input-list{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+.input-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.calendar,.arrow{
+    border: 1px solid gray;
+    padding: 6px;
+    transition: all .3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.calendar:hover ,.arrow:hover{
+    background-color: #B2B2B2;
+}
+.calendar:hover,.arrow:hover .bi{
+    color: white;
+}
+.arrow .bi{
+    font-size: 20px;
+}
+.search,.sit{
+    padding: 8px 20px;
+    background-color: #F96666;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+         
+.sit, .search {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    margin: 10px;
+    padding: 7px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    /* display: block; */
+  }
+
+  .search:hover, .sit:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  .sit:active , .search:active{
+    background-image: linear-gradient(to right, #d68d8b 0%, #cd8588  51%, #e52d27  100%);
+
+  }
+
+ 
+
+.check-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.check-item{
+    display: flex;
+    align-items: center;
+}
+#day, #bg, #rules{
+    width: 20px;
+    height: 20px;
+}
+input[type='checkbox']{
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    /* background-color: #FF9494; */
+    cursor: pointer;
+    border-radius: 5px;
+    outline: blue;
+    border: 1px solid #FF9494;
+    transition: all .2s ease;
+}
+input[type='checkbox']:after{
+    content: url(../img/check-lg.svg);
+    display: flex;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.check-item:hover {
+    color: #D23369;
+}
+input[type='checkbox']:checked {
+    background-color: red;
+}
+input[type='checkbox']:checked::after{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN END */
+/* NAVBAR  BLOCK */
+.curreny{
+    position: absolute;
+    top: 72px;
+    width: 200px;
+    z-index: 99;
+    background-color: #ffff;
+}
+.currency-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.card-item,.currency-item{
+    display: inline-block;
+    padding: 10px 5px;
+    transition: all .2s ease;
+
+}
+.card-item:hover,.currency-item:hover{
+    background-color: #ABD9FF;
+    border-left: 2px solid blue;
+}
+.none{
+    display: none;
+}
+/* LOGIN  */
+.login{
+    position: absolute;
+    top: 80px;
+    background-color: aliceblue;
+    width: 300px;
+    height: 320px;
+}
+.title{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.title p{
+    display: inline-block;
+    padding:10px 47px ;
+    transition: all .3s ease;
+}
+.title p:hover{
+    background-color: #ABD9FF;
+    border-bottom:1px solid black;
+}
+.login-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px ;
+    align-items: center;
+}
+.enter{
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.agent{
+    border: 1px solid blue;
+    width: 100%;
+    margin-top: 10px;
+}
+.google{
+    margin-top: 10px;
+}
+.login-item label{
+    width: 100%;
+    padding: 0 20px;
+}
+/* LIST */
+.card{
+    position: absolute;
+    right: -5px;
+    top: 70px;
+    width: 200px;
+}
+.card-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.out{
+    outline-color: #b31217;
+}
+.sit-number{
+    position: absolute;
+    right: 100px;
+    top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+}
+.in-list{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+.in-item{
+    display: flex;
+    gap: 20px;
+}
+.title-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bi-dash,.bi-plus{
+    background-color: #b31217;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}

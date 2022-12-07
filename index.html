@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online ticket buying</title>
+    <link rel="icon" type="image/x-icon" href="./img/airport.jpg" />
+    <!-- BOOTSTRAP  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <head>
+      <nav>
+        <div class="container">
+          <div class="nav">
+            <div class="nav__logo">
+              <a href="./index.html"
+                ><img src="./img/logo.svg" alt="logo" class="logo"
+              /></a>
+            </div>
+            <div class="nav__bar">
+              <ul class="nav__bar-list">
+                <li class="nav__bar-item money">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-cash-coin coin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"
+                    />
+                    <path
+                      d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"
+                    />
+                    <path
+                      d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"
+                    />
+                    <path
+                      d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"
+                    />
+                  </svg>
+                  <span class="sum">UZS</span>
+                </li>
+                <div class="curreny shadow none">
+                  <ul class="currency-list">
+                      <li class="currency-item">UZB (Uzbek som)</li>
+                      <li class="currency-item">USD (Usd dollar)</li>
+                      <li class="currency-item">RUB (Rubl)</li>
+                  </ul>
+                </div>
+                <li class="nav__bar-item per">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-person person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                    />
+                  </svg>
+                </li>
+                <div class="login shadow none">
+                  <div class="title">
+                      <p>Auth</p>
+                      <p>Registratsiya</p>
+                  </div>
+                  <ul class="login-list">
+                      <li class="login-item">
+                          <label >*Login
+                              <input class="form-control" type="text">
+                          </label>
+                          <label >*Parol
+                              <input class="form-control" type="password">
+                          </label>
+                      </li>
+                      <li class="login-item">
+                          <button class="btn enter">Kirish</button>
+                          <button class="btn agent">Agent sifatda kirish</button>
+                      </li>
+                      <li class="login-item google">
+                          <span><img src="./img/google.svg" alt=""></span>
+                          <span><img src="./img/facebook.svg" alt=""></span>
+                      </li>
+                  </ul>
+                </div>
+                <li class="nav__bar-item item-3">
+                  <div class="list">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-list"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="num">
+                    <a class="number" href="tel:(66) 230 44 00"
+                      >(66) 230 44 00</a
+                    >
+                    <a href="tel:(71) 203 00 11" class="number"
+                      >(71) 203 00 11</a
+                    >
+                  </div>
+                </li>
+                <div class="shadow card none">
+                    <ul class="card-list">
+                        <li class="card-item">Biz haqimizda</li>
+                        <li class="card-item">Blog</li>
+                        <li class="card-item">Yordam</li>
+                        <li class="card-item">Kontakt</li>
+                        <li class="card-item">Hamkorlik</li>
+                    </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </head>
+    <!-- header -->
+    <!-- main start -->
+    <main>
+      <section class="info">
+        <div class="container">
+          <div class="option">
+            <h1 class="info-title">Samolyot chiptalari. Parvozlarda tejang!</h1>
+            <ul class="option-list">
+              <list class="option-item active">Parvozlar</list>
+              <list class="option-item">Mehmonhonalar</list>
+              <list class="option-item">Ekskursiyalar</list>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="hero-wrapper">
+        <div class="container">
+          <div class="hero">
+            <ul class="input-list">
+              <li class="input-item">
+                <input type="text"  class="form-control where py-2"   placeholder="Qayerdan" />
+                <span class="arrow"> <i class="bi bi-arrow-left-right"></i></span>
+                <input type="text" placeholder="Qayerga" class="where py-2 form-control from" />
+              </li>
+              <li class="input-item">
+                <input placeholder="Ketish" type="date" class="where form-control py-2 depart" />
+                <button class="calendar"><i class="bi bi-calendar2-range"></i></i></button>
+                <input type="date" placeholder="Kelish" class="where form-control py-2 return" />
+              </li>
+              <li class="sit">Orindiqlar</li>
+              <div class="sit-number shadow d-none">
+                <ul class="title-list">
+                    <li class="title-item" >Kattalar</li>
+                    <li class="title-item">Bollar</li>
+                    <li class="title-item">Chaqaloqlar</li>
+                </ul>
+                <ul class="in-list">
+                    <li class="in-item" >
+                        <i class="bi bi-dash minus1"></i>
+                        <span class="old">1</span>
+                        <i class="bi bi-plus plus1"></i>
+                    </li>
+                    <li class="in-item">
+                        <i class="bi bi-dash minus2"></i>
+                        <span class="young">0</span>
+                        <i class="bi bi-plus plus2"></i>
+                    </li>
+                    <li class="in-item">
+                        <div class="btn"><i class="bi bi-dash minus3"></i></div>
+                        <span class="baby">0</span>
+                        <i class="bi bi-plus plus3"></i>
+                    </li>
+                </ul>
+                <select class="form-select">
+                    <option selected value="Ekenom">Ekonom</option>
+                    <option value="Biznes">Biznes</option>
+                </select>
+              </div>
+              <li class="search"><p class="m-0">Izlash</p><i class="bi bi-search"></i></li>
+            </ul>
+            <div class="checkbox">
+                <ul class="check-list">
+                    <li class="check-item">
+                        <input type="checkbox"  id="day">
+                        <label for="day">
+                            
+                            +/- kun
+                        </label>
+                    </li>
+                    <input type="checkbox"  id="rules">
+                    <li class="check-item"> <label for="rules">
+                       Nizom  +/-  3-kun
+                    </label></li>
+                    <input type="checkbox"  id="bg">
+                    <li class="check-item"><label for="bg">
+                        Bagaj Qidirish
+                    </label>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+  </body>
+  <script src="./js/plugin.js"></script>
+  <script src="./js/script.js"></script>
+</html>
